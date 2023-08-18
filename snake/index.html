@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="gameContainer">
+    <div class="intro">
+        <h2>Welcome to Snake!!. Please input your name:</h2>
+         <div class="form">
+        <input type="text" id="name">
+         <button id="submit">submit</button></div>
+     <div class="lvls">
+     <input type="radio" class="lvl" name="level" id="easyLvl">
+     <label for="easyLvl">Easy</label>
+     <input type="radio" class="lvl" name="level" id="medLvl">
+     <label for="medLvl">Medium</label>
+     <input type="radio" class="lvl" name="level" id="hardLvl">
+     <label for="hardLvl">Hard</label><br>
+ <button id="startGame">Start Game</button></div></div>
+ <h1 class="timeout"></h1>
+    <canvas id="gameBoard" width="500" height="500"></canvas>
+    <div id="score">0</div>
+    <button id="resetBtn">Reset</button>
+</div>
+
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
